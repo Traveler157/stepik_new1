@@ -7,7 +7,7 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture(autouse=True)
-def browser(request):
-    browser =request.config.getoption("--language")
-    print('@@@',browser,'!!#####!!')
-    return browser
+def browser1(request):
+    browser1 =request.config.getoption("--language")
+    print('@@@',browser1,'!!#####!!')
+    return browser1
